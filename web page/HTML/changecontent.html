@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+.bluebox{
+  background-color: #3730a3;
+  color: antiquewhite;
+  height: 150px;
+  width: auto;
+}
+.yellowbox{
+  background-color:#eab308 ;
+  color: antiquewhite;
+  height: 150px;
+  width: auto;
+}
+.greenbox{
+  background-color: #166534;
+  color: antiquewhite;
+  height: 150px;
+  width: auto;
+}
+.great{
+  background-color: #c026d3;
+}
+    </style>
+      <body>
+<div class="bluebox" id = "facebook">
+  <p>Facebook is <span class="great">great</span></p>
+</div>
+<div class="yellowbox" id="apple">
+  <p>Apple</p>
+</div>
+<div class="greenbox" id="microsoft">
+  <p>Microsoft</p>
+</div>
+<button id="button1">Change Facebook style.</button>
+<button id="button2">Change Apple style.</button>
+<button id="button3">Change Microsoft style.</button>
+
+<script>document.getElementById("button1").onclick= function(){
+  document.getElementById ("facebook").style.width = "200px"
+  document.getElementById ("facebook").style.backgroundColor = "#db2777"
+}
+document.getElementById("button2").ondblclick=function(){
+  document.getElementById("apple").style.height ="400px"
+  document.getElementById("apple").style.fontFamily ="monospace"
+  document.getElementById ("apple").style.backgroundColor = "#374151"
+}
+document.getElementById("button3").ondblclick=function(){
+  document.getElementById("microsoft").style.height ="500px"
+  document.getElementById ("microsoft").style.backgroundColor = "#fde68a"
+  document.getElementById ("microsoft").style.width = "200px"
+}
+  </script>
+      </body>
+</html>

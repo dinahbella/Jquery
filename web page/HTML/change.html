@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+.bluebox{
+  background-color: #3730a3;
+  color: antiquewhite;
+  height: 150px;
+  width: auto;
+}
+.yellowbox{
+  background-color:#eab308 ;
+  color: antiquewhite;
+  height: 150px;
+  width: auto;
+}
+.greenbox{
+  background-color: #166534;
+  color: antiquewhite;
+  height: 150px;
+  width: auto;
+}
+.great{
+  background-color: #c026d3;
+}
+    </style>
+      <body>
+<div class="bluebox" id = "facebook">
+  <p>Facebook is <span class="great">great</span></p>
+</div>
+<div class="yellowbox" id="apple">
+  <p>Apple</p>
+</div>
+<div class="greenbox">
+  <p>Microsoft</p>
+</div>
+<button id="button1">Change Facebook content.</button>
+<button id="button2">Change Apple content.</button>
+<script>document.getElementById("button1").onclick= function(){
+  document.getElementById ("facebook").innerHTML
+   = "<p> Facebook.</p>"
+}
+document.getElementById("button2").ondblclick=function(){
+  document.getElementById("apple").innerHTML
+  ="<ul><li>Audi</li><li>BMW</li><li>Mercidies</li></ul>"
+}
+  </script>
+      </body>
+</html>

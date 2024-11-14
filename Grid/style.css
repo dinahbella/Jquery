@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+div {
+  background-color: #475569;
+  color: bisque;
+  text-align: center;
+  font-size: 20px;
+  padding: 5px;
+}
+.container {
+  background-color: #374151;
+  display: grid;
+  height: 100vh;
+  grid-template-rows: repeat(4 110px);
+  grid-template-columns: 200px 1fr;
+  grid-gap: 5px;
+  padding: 7px;
+  /* align vertically in a row */
+  /* align-items: center; */
+  /* align horizontally in a column */
+  /* justify-items: center;
+  combination of align items and justify items /* */
+  place-items: center stretch;
+  /* align whole grid horizontally */
+  /* justify-content: center; */
+  /* align thr whole grid vertically */
+  /* align-content: center; */
+  /* combines both justify content and align content */
+  place-content: center center;
+}
+#apple {
+  height: 100px;
+}
+
+#facebook {
+  height: 50px;
+}
+#microsoft {
+  height: 70px;
+}
+#samsung {
+  height: 80px;
+}
+#google {
+  height: 40px;
+}
+#amazon {
+  height: 35px;
+}
