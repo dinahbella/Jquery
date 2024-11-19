@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Variables</title>
+  </head>
+  <body>
+    <style>
+      .bluebox {
+        background-color: #3730a3;
+        color: antiquewhite;
+        height: 150px;
+        width: auto;
+      }
+      .yellowbox {
+        background-color: #eab308;
+        color: antiquewhite;
+        height: 150px;
+        width: auto;
+      }
+      .greenbox {
+        background-color: #166534;
+        color: antiquewhite;
+        height: 150px;
+        width: auto;
+      }
+      .great {
+        background-color: #c026d3;
+      }
+    </style>
+    <body>
+      <div class="bluebox" id="facebook">
+        <p>Facebook is <span class="great">great</span></p>
+      </div>
+      <div class="yellowbox" id="apple">
+        <p>Apple</p>
+      </div>
+      <div class="greenbox" id="microsoft">
+        <p>Microsoft</p>
+      </div>
+      <button id="button1" onclick="swap('facebook','apple')">
+        Swap content of facebook nand apple.
+      </button>
+      <button id="button2" onclick="swap('apple','microsoft')">
+        Swap content of apple and microsoft.
+      </button>
+      <button id="button3" onclick="swap('facebook','microsoft')">
+        Swap content of facebook and microsoft.
+      </button>
+      <script>
+        function greeting1() {
+          window.alert("Hello Dinah");
+        }
+        // greeting1();
+        function greeting2(firstname) {
+          window.alert("Hello " + firstname + "!");
+        }
+        greeting2("Dinah");
+        function sum(a, b) {
+          return a + b;
+        }
+        var x = sum(4, 7);
+        window.alert(x);
+        function swap(id1, id2) {
+          var y = document.getElementById(id1).innerHTML;
+          var z = document.getElementById(id2).innerHTML;
+
+          document.getElementById(id2).innerHTML = y;
+          document.getElementById(id1).innerHTML = z;
+        }
+      </script>
+    </body>
+  </body>
+</html>

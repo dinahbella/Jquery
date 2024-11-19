@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Objects</title>
+  </head>
+  <body>
+    <p id="myParagraph">JavaScript</p>
+    <script>
+      var shoppingList = ["bread ", "eggs ", "milk ", "sugar"];
+      //   var shoppingList = new Array("bread", "eggs", "milk", "sugar");
+      showResult(shoppingList);
+      showResult(shoppingList[0]);
+      showResult(shoppingList[1]);
+      showResult(shoppingList[2]);
+      showResult(shoppingList[3]);
+
+      function showResult(x) {
+        document.getElementById("myParagraph").innerHTML += "<br />" + x;
+      }
+      shoppingList[1] = "yogurt";
+      showResult(shoppingList);
+      shoppingList[2] = "orange";
+      showResult(shoppingList);
+      shoppingList[3] = "honey";
+      showResult(shoppingList);
+      delete shoppingList[2];
+      showResult(shoppingList);
+      shoppingList[2] = "cake";
+      showResult(shoppingList);
+      shoppingList.splice(1, 1);
+      showResult(shoppingList);
+      shoppingList.splice(1, 0, "banana", "apple");
+      showResult(shoppingList);
+      shoppingList.sort();
+      showResult(shoppingList);
+      shoppingList.reverse();
+      showResult(shoppingList);
+      var myString = "ABCD";
+      var myArray = myString.split();
+      showResult(myArray);
+    </script>
+  </body>
+</html>

@@ -43,7 +43,20 @@
     <button id="button2">Change Apple style.</button>
     <button id="button3">Change Microsoft style.</button>
     <script>
+        var color = "rgb(20, 140, 30)";
+        document.getElementById("button1").onclick = function(){
+            document.getElementById("facebook").style.backgroundColor = color
+        }
+        var x, y, z, appleColor;
+        document.getElementById("button2").onclick = function(){
+            x = Math.round(Math.random()*20);
+            y = Math.round(Math.random()*256);
+            z = Math.round(Math.random()*256);
+appleColor = 'rgb('+ x +','+ y +', '+ z +')';
         
+        document.getElementById("apple").style.backgroundColor = appleColor
+document.getElementById("apple").innerHTML = appleColor
+        }
     </script>
   </body>
 </html>

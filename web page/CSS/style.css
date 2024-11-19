@@ -1,3 +1,8 @@
 image {
   opacity: 8.3;
 }
+p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 45px;
+  background-color: aquamarine;
+}

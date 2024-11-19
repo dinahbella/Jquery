@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter</title>
+  </head>
+  <body>
+    <p id="counter">0</p>
+    <button onclick="clearInterval(myCounter)">Stop Counting</button>
+    <br />
+    <button onclick="clearTimeout(delayWelcomeMessage)">
+      Avoid welcome message
+    </button>
+    <script>
+      var counter = document.getElementById("counter");
+      var x = 0;
+      var myCounter = setInterval(function () {
+        x++;
+        counter.innerHTML = x;
+      }, 1000);
+      var delayWelcomeMessage = setTimeout(function () {
+        window.alert("Welcome to Dinah's page");
+      }, 3000);
+    </script>
+  </body>
+</html>
