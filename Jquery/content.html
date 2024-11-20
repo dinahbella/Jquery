@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JQUERY</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <style>
+        .bluebox{
+        background-color: #3A5795;
+        height: 100px;
+        width:auto;
+            color: inherit;
+        }
+        .yellowbox{
+        background-color: rgb(222, 224, 85);
+        height: 100px;
+        width: auto;
+        }
+        .greenbox{
+        background-color: #31af37;
+        height: 100px;
+        width: auto;
+        }
+        #great{
+        background-color: #5a3479;
+       
+        }
+        </style>
+        <script
+       src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jq
+       uery.min.js">
+        </script>
+        </head>
+        <body>
+       <div class="bluebox" id="facebook">
+        <p>Facebook is <span id="great">great</span></p>
+        <p class="orange">Dinah is a web developer</p>
+       </div>
+        <div class="yellowbox" id="apple">
+            <p>Apple</p>
+        </div>
+        <div class="greenbox" id="microsoft">
+            <p>Microsoft</p>
+            <p><a href="http://www.microsoft.com"
+                 title="microsoft"
+                 id="microsoftlink">Microsoft link</a></p>
+        </div>
+        <p>Enter your name: <input></p>
+        <button id="changefacebook">Change Facebook text</button>
+        <button id="changeApple">Change Apple HTML</button>
+        <button id="changeinput">Change input value</button>
+        <button id="changemicrosoft">Change Microsoft </button>
+
+</body>
+  <script>
+    $(function(){
+        $("#changefacebook").click(function(){
+            $("#facebook").text("This is Facebook.")
+        });
+        $("#changeApple").click(function(){
+            $("#apple").html("<p>Dinah is great</p><p>Apple is wonderful</p>")
+        });
+        $("#changeinput").click(function(){
+            $("input").val("Dinah")
+        });
+        $("#changeMicrosoft").click(function(){
+ $("#microsoftLink").attr({"href" :
+"http://www.google.com", "title" : "Google"});
+       })
+    })
+  </script>
+</html>

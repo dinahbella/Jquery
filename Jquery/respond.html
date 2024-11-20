@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JQUERY</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <style>
+        .bluebox{
+        background-color: #3A5795;
+        height: 100px;
+        width:auto;
+            color: inherit;
+        }
+        .yellowbox{
+        background-color: rgb(222, 224, 85);
+        height: auto;
+        width: auto;
+        }
+        .greenbox{
+        background-color: #31af37;
+        height: auto;
+        width: auto;
+        }
+        #great{
+        background-color: #5a3479;
+       
+        }
+        </style>
+        <script
+       src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jq
+       uery.min.js">
+        </script>
+        </head>
+        <body>
+       <div class="bluebox">
+        <p>Facebook is <span id="great">great</span></p>
+        <p class="orange">Dinah is a web developer</p>
+       </div>
+        <div class="yellowbox">
+            <p>Apple</p>
+            <ul>
+                <li>BMW</li>
+                <li>Audi</li>
+                <li>Mercedes</li>
+            </ul>
+            <p><a href="http://www.google.com">
+                This is a link</a></p>
+            <p><a href="http://www.microsoft.com">This is another link</a></p>
+        </div>
+        <div class="greenbox">
+            <p>Microsoft</p>
+            <ul>
+                <li>BMW</li>
+                <li>Audi</li>
+                <li>Mercedes</li>
+            </ul>
+            <table>
+                <tr>
+                <th>
+                Phone Make
+                </th>
+                <th>
+                Model
+                </th>
+                <th>
+                Model
+                </th>
+                </tr>
+               
+                <tr><td> Apple</td>
+                <td>
+                Iphone 4
+                </td>
+                <td>
+                16Go
+                </td>
+                </tr>
+               
+                <tr>
+                <td>
+                Apple
+                </td>
+                <td>
+                Iphone 4
+                </td>
+                <td>
+                16Go
+                </td>
+                </tr>
+               
+                <tr>
+                <td>
+                Apple
+                </td>
+                <td>
+                Iphone 4
+                </td>
+                <td>
+                16Go
+                </td>
+                </tr>
+               
+                <tr>
+                <td>
+                Apple
+                </td>
+                <td>
+                Iphone 4
+                </td>
+                <td>
+                16Go
+                </td>
+                </tr>
+               
+                <tr>
+                <td>
+                Apple
+                </td>
+                <td>
+                Iphone 4
+                </td>
+                <td>
+                16Go
+                </td>
+                </tr>
+               
+                </table>
+        </div>
+        <p>Type Your name            </p>
+        <input type="text">
+   <button type="submit">Submit</button>
+       <script>
+        $(function(){
+       
+        $("p").mouseover(function(){
+        $(this).css("background-color","#a855f7");
+       
+        }
+        );
+        $("p").mouseout(function(){
+        $(this).css("background-color","");
+       
+        }
+        );
+        $("input").focus(function(){
+        $(this).css("background-color","#fef08a");
+       
+        }
+        );
+        $("input").blur(function(){
+        $(this).css("background-color","#ffffff");
+       
+        }
+        );
+        $("input").keyup(function(){
+        $(this).css("background-color","#059669");
+       
+        }
+        );
+        $("#submit").click(function(){
+        $("#input").css("background-color","#ffffff");
+        $("#input").val("");
+        }
+        );
+    }
+);
+    
+       </script>
+  </body>
+</html>
