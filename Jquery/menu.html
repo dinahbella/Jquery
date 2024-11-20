@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>menu</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jq
+uery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.
+3/themes/smoothness/jquery-ui.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3
+/jquery-ui.min.js"></script>
+    <style>
+      .bluebox {
+        background-color: #3a5795;
+        color: white;
+        height: auto;
+        width: auto;
+      }
+      .yellowbox {
+        background-color: rgb(222, 224, 85);
+        height: auto;
+        width: auto;
+      }
+      .greenbox {
+        background-color: #31af37;
+        height: 100px;
+        width: auto;
+      }
+      #great {
+        background-color: #5a3479;
+      }
+      .ui-autocomplete {
+        max-height: 100px;
+        overflow-y: auto;
+        max-width: 200px;
+      }
+      ui.menu {
+        width: 200px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="bluebox ui-corner-all" id="facebook">
+      <ul id="continents">
+        <li>
+          Africa
+          <ul>
+            <li>Egypt</li>
+            <li>Kenya</li>
+            <li>
+              Nigeria
+              <ul>
+                <li>Akwa Ibom</li>
+                <li>Lagos</li>
+                <li>Porthacourt</li>
+                <li>Abuja</li>
+              </ul>
+            </li>
+            <li>Cameroon</li>
+          </ul>
+        </li>
+        <li>
+          Asia
+          <ul>
+            <li>India</li>
+            <li>China</li>
+            <li>Vietnam</li>
+            <li>Iraq</li>
+          </ul>
+        </li>
+        <li>
+          Europe
+          <ul>
+            <li>Romania</li>
+            <li>Sweden</li>
+            <li>France</li>
+            <li>Russia</li>
+          </ul>
+        </li>
+        <li>
+          North America
+          <ul>
+            <li>USA</li>
+            <li>Mexico</li>
+            <li>Bahamas</li>
+            <li>Dominica</li>
+          </ul>
+        </li>
+        <li>
+          South America
+          <ul>
+            <li>Brazil</li>
+            <li>Peru</li>
+            <li>Colombia</li>
+            <li>Venezuela</li>
+          </ul>
+        </li>
+        <li>Antartica</li>
+        <li>Australia</li>
+      </ul>
+    </div>
+    <div class="yellowbox ui-corner-all" id="apple">
+      <ul id="continents2">
+        <li class="ui-widget-header">
+          Africa
+          <ul>
+            <li>Egypt</li>
+            <li>Kenya</li>
+            <li>
+              Nigeria
+              <ul>
+                <li>Akwa Ibom</li>
+                <li>Lagos</li>
+                <li>Porthacourt</li>
+                <li>Abuja</li>
+              </ul>
+            </li>
+            <li>Cameroon</li>
+          </ul>
+        </li>
+        <li class="ui-widget-header">
+          Asia
+          <ul>
+            <li>India</li>
+            <li>China</li>
+            <li>Vietnam</li>
+            <li>Iraq</li>
+          </ul>
+        </li>
+        <li class="ui-widget-header">
+          Europe
+          <ul>
+            <li>Romania</li>
+            <li>Sweden</li>
+            <li>France</li>
+            <li>Russia</li>
+          </ul>
+        </li>
+        <li class="ui-widget-header">
+          North America
+          <ul>
+            <li>USA</li>
+            <li>Mexico</li>
+            <li>Bahamas</li>
+            <li>Dominica</li>
+          </ul>
+        </li>
+        <li class="ui-widget-header">
+          South America
+          <ul>
+            <li>Brazil</li>
+            <li>Peru</li>
+            <li>Colombia</li>
+            <li>Venezuela</li>
+          </ul>
+        </li>
+        <li class="ui-widget-header">Antartica</li>
+        <li class="ui-widget-header">Australia</li>
+      </ul>
+    </div>
+    <div class="greenbox ui-corner-all" id="microsoft">
+      <p>Microsoft.</p>
+
+      <p>
+        <a id="microsoftLink" href="http://www.microsoft.com" title="Microsoft">
+          Microsoft link.
+        </a>
+      </p>
+    </div>
+    <script>
+      $(function () {
+        $("#continents").menu();
+        $("#continents2").menu();
+      });
+    </script>
+  </body>
+</html>
