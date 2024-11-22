@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  background-color: #808000;
+}
+#container {
+  height: 600px;
+  width: 750px;
+  background-color: #ffdb58;
+  box-shadow: 0 4px 4px 4px #b7410e;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px auto;
+  position: relative;
+}
+#score {
+  background-color: #b7410e;
+  left: 650px;
+  border-radius: 5px;
+  position: absolute;
+  padding: 11px;
+  box-shadow: 0 4px 0 #808000;
+}
+#game {
+  background-color: whitesmoke;
+  width: 650px;
+  height: 400px;
+  margin: 50px auto 10px auto;
+  box-shadow: 0 4px 4px 4px #b7410e;
+}
+#instruction {
+  background-color: #b7410e;
+  height: 50px;
+  width: 600px;
+  padding: 15px;
+  text-align: center;
+  line-height: 27px;
+  margin: 15px auto 10px auto;
+  box-shadow: 2px 4px 4px 2px #808000;
+}
+#gameover {
+  background: linear-gradient(#808000, #ffdb58);
+  height: 200px;
+  top: 170px;
+  left: 125px;
+  color: whitesmoke;
+  width: 500px;
+  z-index: 2;
+  position: absolute;
+  display: none;
+}
+#trialsleft {
+  width: 100px;
+  padding: 10px;
+  height: 30px;
+  position: absolute;
+  top: 30px;
+  left: 25px;
+  line-height: 4px;
+  text-align: center;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  box-shadow: 0 4px #808000;
+  display: none;
+}
+#startreset {
+  width: 100px;
+  padding: 10px;
+  position: absolute;
+  background-color: rgba(183, 65, 14, 1);
+  border-radius: 10px;
+  box-shadow: 0 4px #808000;
+  text-align: center;
+  line-height: 27px;
+  left: 325px;
+  box-shadow: 2px 4px 4px 2px #808000;
+}
+.life {
+  width: 16px;
+  height: 16px;
+  margin: 0 5px;
+}
+#fruitContainer {
+  width: 650;
+  height: 400px;
+  margin: 50px auto 10px auto;
+  background-color: white;
+  box-shadow: 0px 4px #808000;
+  -moz-box-shadow: 0px 4px #808000;
+  -webkit-box-shadow: 0px 4px #808000;
+  font-size: 100px;
+  text-align: center;
+  font-family: cursive, sans-serif;
+  color: black;
+  position: relative;
+  overflow: hidden;
+}
+.fruit {
+  display: none;
+}
+.apple {
+  width: 100px;
+  height: 100px;
+}

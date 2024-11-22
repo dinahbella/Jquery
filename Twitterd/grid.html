@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Grid system</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+      #deviceSize {
+        margin-bottom: 30px;
+      }
+      .bluebox {
+        background-color: #1e40af;
+        height: 200px;
+        color: whitesmoke;
+      }
+      .greenbox {
+        background-color: #16a34a;
+        height: 200px;
+        color: whitesmoke;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div id="deviceSize">Device Size:</div>
+      <div class="bluebox col-md-8 col-sm-6 col-xs-3 col-lg-4">bluebox</div>
+      <div class="greenbox col-md-4 col-sm-6 col-xs-9 col-lg-8">greenbox</div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script scr="js/bootstrap.min.js"></script>
+    <script>
+      $(function () {
+        $(window).resize(function () {
+          var windowwidth = $(window).width;
+          if (windowwidth < 768) {
+            $("#deviceSize").text(
+              "Device Size:" + windowwidth + "px - Extra small devices(Phones)"
+            );
+          } else if (windowwidth < 992) {
+            $("#deviceSize").text(
+              "Device Size:" + windowwidth + "px - Small devices(Tablets)"
+            );
+          } else if (windowwidth < 1200) {
+            $("#deviceSize").text(
+              "Device Size:" + windowwidth + "px - Medium devices(Desktops)"
+            );
+          } else {
+            $("#deviceSize").text(
+              "Device Size:" + windowwidth + "px - Large devices(Desktops)"
+            );
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
